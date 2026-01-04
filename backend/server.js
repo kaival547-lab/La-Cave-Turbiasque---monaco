@@ -14,13 +14,7 @@ connectDB();
 
 // Middleware
 app.use(cors({
-    origin: [
-        process.env.FRONTEND_URL || 'http://localhost:3000',
-        /\.vercel\.app$/, // Allow all Vercel deployments
-        'http://localhost:3001',
-        'http://127.0.0.1:3000',
-        'http://127.0.0.1:3001'
-    ],
+    origin: true, // Reflect request origin, most robust for Vercel/Render connection
     credentials: true,
 }));
 app.use(express.json()); // Parse JSON bodies
