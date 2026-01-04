@@ -38,7 +38,6 @@ export const metadata: Metadata = {
         media: "(prefers-color-scheme: dark)",
       },
     ],
-    shortcut: ["/icon.svg"],
     apple: "/apple-icon.png",
   },
 }

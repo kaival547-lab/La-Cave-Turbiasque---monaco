@@ -33,8 +33,8 @@ export default function Navigation() {
             <Image
               src="/images/logo.png"
               alt="La Cave Turbiasque"
-              width={180}
-              height={60}
+              width={240}
+              height={80}
               className="h-12 w-auto"
               priority
             />
